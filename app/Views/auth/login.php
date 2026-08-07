@@ -9,9 +9,9 @@
 <body class="auth-page">
     <main class="login-shell">
         <section class="login-hero">
-            <div class="login-kicker">Alfresco Document Gateway</div>
+            <!-- <div class="login-kicker">Alfresco Document Gateway</div>
             <h1>ค้นหาและเปิดเอกสารตามสิทธิ์ของผู้ใช้งาน</h1>
-            <p>หน้าเว็บ CI4 นี้เชื่อมต่อกับ UserAlfresco-api แล้วให้ backend เป็นคนจัดการ token/session ให้เรียบร้อย</p>
+            <p>หน้าเว็บ CI4 นี้เชื่อมต่อกับ UserAlfresco-api แล้วให้ backend เป็นคนจัดการ token/session ให้เรียบร้อย</p> -->
         </section>
 
         <section class="login-panel">
@@ -44,7 +44,7 @@
             </form>
 
             <div class="login-note">
-                CI4 ส่งข้อมูล login ไปที่ <code>UserAlfresco-api</code> แล้วเก็บ access token ไว้ใน PHP session
+                <!-- CI4 ส่งข้อมูล login ไปที่ <code>UserAlfresco-api</code> แล้วเก็บ access token ไว้ใน PHP session -->
             </div>
         </section>
     </main>

@@ -59,15 +59,15 @@ code {
 }
 
 .login-shell {
-    width: min(980px, 100%);
+    width: min(440px, 100%);
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) 440px;
-    gap: 28px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
     align-items: center;
 }
 
 .login-hero {
-    padding: 12px 8px;
+    display: none;
 }
 
 .login-kicker,
