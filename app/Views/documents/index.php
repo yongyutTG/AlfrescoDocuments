@@ -51,7 +51,7 @@
 
                 <label>
                     <span>ค้นหาชื่อไฟล์</span>
-                    <input id="keyword" type="search" placeholder="เช่น 026277 หรือ NPR">
+                    <input id="keyword" type="search">
                 </label>
 
                 <label>
