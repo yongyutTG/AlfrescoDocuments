@@ -156,6 +156,26 @@ label span {
     font-weight: 800;
 }
 
+.login-input {
+    position: relative;
+}
+
+.login-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    width: 18px;
+    height: 18px;
+    color: var(--primary);
+    fill: currentColor;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.login-input input {
+    padding-left: 42px;
+}
+
 input,
 select {
     width: 100%;
