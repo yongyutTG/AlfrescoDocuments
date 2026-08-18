@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login | UserAlfresco</title>
     <link rel="stylesheet" href="<?= base_url('assets/css/app.css') ?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body class="auth-page">
@@ -27,6 +28,7 @@
                 <label>
                     <span>ชื่อผู้ใช้งาน</span>
                     <div class="login-input">
+                        <i class="bi bi-person login-input-icon" aria-hidden="true"></i>
                         <input type="text" name="username" value="<?= old('username') ?>" autocomplete="username" required autofocus>
                     </div>
                 </label>
@@ -34,6 +36,7 @@
                 <label>
                     <span>รหัสผ่าน</span>
                     <div class="login-input">
+                        <i class="bi bi-lock login-input-icon" aria-hidden="true"></i>
                         <input type="password" name="password" autocomplete="current-password" required>
                     </div>
                 </label>

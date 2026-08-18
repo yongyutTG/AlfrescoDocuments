@@ -160,6 +160,21 @@ label span {
     position: relative;
 }
 
+.login-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    color: var(--primary);
+    font-size: 18px;
+    line-height: 1;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.login-input input {
+    padding-left: 42px;
+}
+
 input,
 select {
     width: 100%;
