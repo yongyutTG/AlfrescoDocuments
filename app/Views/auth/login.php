@@ -6,6 +6,8 @@
     <title>Login | UserAlfresco</title>
     <link rel="stylesheet" href="<?= base_url('assets/css/app.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body class="auth-page">
     <main class="login-shell">
@@ -14,10 +16,9 @@
 
         <section class="login-panel">
             <div class="brand-block">
-                <!-- <div class="brand-mark">A</div> -->
+                <div class="brand-mark">A</div>
                 <div>
                     <h2>ระบบ E-Documents Alfresco</h2>
-                    <!-- <p>เข้าสู่ระบบด้วย user ของ Alfresco</p> -->
                 </div>
             </div>
 
@@ -27,6 +28,7 @@
                 <label>
                     <span>ชื่อผู้ใช้งาน</span>
                     <div class="login-input">
+                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
                         <input type="text" name="username" value="<?= old('username') ?>" autocomplete="username" required autofocus>
                     </div>
                 </label>
@@ -34,11 +36,12 @@
                 <label>
                     <span>รหัสผ่าน</span>
                     <div class="login-input">
+                        <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
                         <input type="password" name="password" autocomplete="current-password" required>
                     </div>
                 </label>
 
-                <button type="submit">เข้าสู่ระบบ</button>
+                <button type="submit" id="loginBtn" >เข้าสู่ระบบ</button>
             </form>
 
             <div class="login-note">
@@ -66,6 +69,8 @@
         document.getElementById('loginForm').addEventListener('submit', function (event) {
             const usernameInput = this.elements.username;
             const passwordInput = this.elements.password;
+            const loginBtn = document.getElementById("loginBtn");
+
 
             if (usernameInput.value.trim() === '') {
                 event.preventDefault();
@@ -78,7 +83,13 @@
                 event.preventDefault();
                 toastr.warning('กรุณากรอกรหัสผ่าน', 'แจ้งเตือน');
                 passwordInput.focus();
+                return;
             }
+            loginBtn.disabled = true;
+            loginBtn.innerHTML = `
+            <span class="spinner-border spinner-border-sm me-2 text-white" role="status"></span>
+            <span style="color: #fff;">กำลังเข้าสู่ระบบ...</span>`;
+
         });
     </script>
 </body>

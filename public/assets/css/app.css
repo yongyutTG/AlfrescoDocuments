@@ -28,7 +28,7 @@ body {
     background:
         linear-gradient(180deg, #eef3f8 0, var(--bg) 260px),
         var(--bg);
-    font-family: Arial, Tahoma, sans-serif;
+     font-family: 'Kanit', sans-serif !important;
 }
 
 a {
@@ -152,8 +152,8 @@ label span {
     display: block;
     margin-bottom: 6px;
     color: #344054;
-    font-size: 14px;
-    font-weight: 800;
+    font-size: 16px;
+    /* font-weight: 800; */
 }
 
 .login-input {
@@ -323,7 +323,8 @@ button:disabled {
 
 .side-section h2 {
     margin-bottom: 4px;
-    font-size: 18px;
+    font-size: 8px;
+    
 }
 
 .folder-list {
