@@ -27,9 +27,6 @@
                 <label>
                     <span>ชื่อผู้ใช้งาน</span>
                     <div class="login-input">
-                        <svg class="login-input-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                        </svg>
                         <input type="text" name="username" value="<?= old('username') ?>" autocomplete="username" required autofocus>
                     </div>
                 </label>
@@ -37,9 +34,6 @@
                 <label>
                     <span>รหัสผ่าน</span>
                     <div class="login-input">
-                        <svg class="login-input-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                            <path d="M8 1a3 3 0 0 0-3 3v2H4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-1V4a3 3 0 0 0-3-3Zm2 5H6V4a2 2 0 1 1 4 0v2Z"/>
-                        </svg>
                         <input type="password" name="password" autocomplete="current-password" required>
                     </div>
                 </label>
