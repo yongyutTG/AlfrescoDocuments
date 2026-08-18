@@ -62,6 +62,9 @@ writable/uploads/*
 
 writable/debugbar/*
 
+# Misconfigured file sessions must never be committed.
+public/null/
+
 php_errors.log
 
 #-------------------------
